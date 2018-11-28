@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地理编码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-Dr-DE5">
+                                <rect key="frame" x="30" y="100" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aES-Ag-k1O">
+                                <rect key="frame" x="175" y="95" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cdz-Hi-yUI"/>
+                                    <constraint firstAttribute="width" constant="100" id="sLV-fv-RLO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="geoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eb1-e6-TCF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPk-VL-Mo9">
+                                <rect key="frame" x="30" y="139.5" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反地理编码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ori-uq-Yk2">
+                                <rect key="frame" x="30" y="369.5" width="82" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="经度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-a1-Wiy">
+                                <rect key="frame" x="30" y="189.5" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="纬度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSP-bA-r4j">
+                                <rect key="frame" x="100" y="189.5" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="详细地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUE-ms-pc0">
+                                <rect key="frame" x="30" y="239.5" width="79" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wck-ua-u8L">
+                                <rect key="frame" x="30" y="459" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="经度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-KR-5Tz">
+                                <rect key="frame" x="30" y="409" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="纬度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKU-L4-Jgy">
+                                <rect key="frame" x="100" y="409" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCp-mk-0C0">
+                                <rect key="frame" x="175" y="364.5" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="r01-71-a0W"/>
+                                    <constraint firstAttribute="height" constant="30" id="tlU-Pv-P4G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="reverseGeoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1D-cE-JfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dCp-mk-0C0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ori-uq-Yk2" secondAttribute="trailing" constant="20" id="04b-pg-91J"/>
+                            <constraint firstItem="oKU-L4-Jgy" firstAttribute="leading" secondItem="QYV-KR-5Tz" secondAttribute="trailing" constant="20" id="0Cu-5H-pAv"/>
+                            <constraint firstAttribute="trailing" secondItem="dCp-mk-0C0" secondAttribute="trailing" constant="100" id="4pE-tN-xd8"/>
+                            <constraint firstItem="OPk-VL-Mo9" firstAttribute="leading" secondItem="v5c-Dr-DE5" secondAttribute="leading" id="Bd0-lG-oHG"/>
+                            <constraint firstItem="Wck-ua-u8L" firstAttribute="top" secondItem="QYV-KR-5Tz" secondAttribute="bottom" constant="20" id="CG1-gn-4cm"/>
+                            <constraint firstItem="dCp-mk-0C0" firstAttribute="trailing" secondItem="aES-Ag-k1O" secondAttribute="trailing" id="FNA-ye-SsW"/>
+                            <constraint firstItem="lUE-ms-pc0" firstAttribute="top" secondItem="ZWU-a1-Wiy" secondAttribute="bottom" constant="20" id="FaK-Rd-kXo"/>
+                            <constraint firstItem="QYV-KR-5Tz" firstAttribute="top" secondItem="ori-uq-Yk2" secondAttribute="bottom" constant="20" id="Icu-eD-0aj"/>
+                            <constraint firstItem="QYV-KR-5Tz" firstAttribute="leading" secondItem="ori-uq-Yk2" secondAttribute="leading" id="IrV-Ec-afK"/>
+                            <constraint firstItem="aES-Ag-k1O" firstAttribute="centerY" secondItem="v5c-Dr-DE5" secondAttribute="centerY" id="NIB-0c-Lh2"/>
+                            <constraint firstItem="v5c-Dr-DE5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="NvC-qx-ivn"/>
+                            <constraint firstItem="aES-Ag-k1O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="v5c-Dr-DE5" secondAttribute="trailing" constant="20" id="Pqt-Y3-vYA"/>
+                            <constraint firstItem="dCp-mk-0C0" firstAttribute="centerY" secondItem="ori-uq-Yk2" secondAttribute="centerY" id="Zot-JG-RsF"/>
+                            <constraint firstItem="ori-uq-Yk2" firstAttribute="top" secondItem="lUE-ms-pc0" secondAttribute="bottom" constant="100" id="bun-fg-8x1"/>
+                            <constraint firstItem="lUE-ms-pc0" firstAttribute="leading" secondItem="v5c-Dr-DE5" secondAttribute="leading" id="czs-cS-g9k"/>
+                            <constraint firstItem="ori-uq-Yk2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="feJ-tB-QWf"/>
+                            <constraint firstItem="v5c-Dr-DE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="gA4-en-GZl"/>
+                            <constraint firstItem="NSP-bA-r4j" firstAttribute="leading" secondItem="ZWU-a1-Wiy" secondAttribute="trailing" constant="20" id="oeT-Va-baY"/>
+                            <constraint firstItem="ZWU-a1-Wiy" firstAttribute="top" secondItem="OPk-VL-Mo9" secondAttribute="bottom" constant="20" id="qN9-bH-kiX"/>
+                            <constraint firstItem="Wck-ua-u8L" firstAttribute="leading" secondItem="ori-uq-Yk2" secondAttribute="leading" id="rwU-aG-cP4"/>
+                            <constraint firstItem="OPk-VL-Mo9" firstAttribute="top" secondItem="v5c-Dr-DE5" secondAttribute="bottom" constant="20" id="sec-r3-L8s"/>
+                            <constraint firstItem="oKU-L4-Jgy" firstAttribute="top" secondItem="QYV-KR-5Tz" secondAttribute="top" id="tEk-G0-06r"/>
+                            <constraint firstItem="NSP-bA-r4j" firstAttribute="top" secondItem="ZWU-a1-Wiy" secondAttribute="top" id="x8o-Xz-ua0"/>
+                            <constraint firstItem="ZWU-a1-Wiy" firstAttribute="leading" secondItem="v5c-Dr-DE5" secondAttribute="leading" id="z4r-1v-CcR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="geoAddress" destination="OPk-VL-Mo9" id="bYk-sH-oyi"/>
+                        <outlet property="geoDetailAddress" destination="lUE-ms-pc0" id="sR6-Mg-QuK"/>
+                        <outlet property="geoLatitude" destination="NSP-bA-r4j" id="TrB-z3-TjO"/>
+                        <outlet property="geoLongitude" destination="ZWU-a1-Wiy" id="wcd-Fj-mQM"/>
+                        <outlet property="reverseGeoAddress" destination="Wck-ua-u8L" id="urJ-UF-wRm"/>
+                        <outlet property="reverseGeoLatitude" destination="oKU-L4-Jgy" id="zBa-vq-vt2"/>
+                        <outlet property="reverseGeoLongitude" destination="QYV-KR-5Tz" id="PK1-y3-Q5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
